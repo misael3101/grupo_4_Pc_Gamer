@@ -52,6 +52,8 @@ adquiridos hasta ahora en el cursado, como asi también al ser un trabajo grupal
 Torres Edgardo Misael: 19 años, actualmente cursando el terciario, soy un apasionado por las tegnologias y en este proyecto voy a demostrar lo que soy capaz en base a lo
 aprendido y mi esfuerzo personal.
 
+maximiliano Perez: tengo 17 años, me encuentro en secundaria, y tengo muchas espectativas sobre este proyecto grupal para poder afianzar los conocimientos 
+
 
 
 Paginas de inspiracion:
