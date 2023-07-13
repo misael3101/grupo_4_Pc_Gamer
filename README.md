@@ -7,7 +7,7 @@ Nombre del Proyecto: TechGaming Hub
 
 
 
-Descripción:
+# Descripción:
 
 El proyecto de Ventas de PC Gamer y Juegos se centra en ofrecer a los usuarios una experiencia de compra completa y satisfactoria para aquellos que buscan adquirir equipos de PC de alto rendimiento, componentes, accesorios y juegos de calidad.
 Nuestro sitio está dirigido a jugadores apasionados y entusiastas de los videojuegos que buscan llevar su experiencia de juego al siguiente nivel. Nuestros productos y servicios 
@@ -17,7 +17,7 @@ competir en torneos tambien podemos agregar eso en cual al publico que esta diri
 
 
 
-Características Principales:
+# Características Principales:
 
 Amplia gama de equipos de PC Gamer preconfigurados o personalizables para satisfacer las necesidades y presupuestos de los clientes.
 Selección de componentes y accesorios de alta calidad para mejorar la experiencia de juego y optimizar la configuración.
@@ -27,7 +27,7 @@ Servicio al cliente excepcional, con asesoramiento personalizado y atención a l
 
 
 
-Tecnologías Utilizadas:
+# Tecnologías Utilizadas:
 
 El proyecto Ventas de PC Gamer y Juegos se basa en las siguientes tecnologías y herramientas:
 Lenguajes de programación web como HTML, CSS
@@ -41,7 +41,7 @@ El equipo detrás de Ventas de PC Gamer y Juegos está compuesto por estudiantes
 
 
 
-Integrantes:
+# Integrantes:
 
 Lucas Vazquez: 20 años actualmente cursando el terciario, soy un programador en aprendizaje y con este proyecto demostrare lo aprendido durante el periodo de aprendizaje
 que tuve.
@@ -73,3 +73,5 @@ https://www.cdmarket.com.ar/
 #steam
 https://store.steampowered.com/
 
+# plataforma que utilizaremos para organizar el trabajo:
+ https://help.github.com/es/github/managing-your-work-on-github/about-project-boards
