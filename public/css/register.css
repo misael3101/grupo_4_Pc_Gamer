@@ -46,6 +46,7 @@
     
 
 input {
+    border-radius: 10px;
     padding: 10px;
 }
 /*este es el texto */

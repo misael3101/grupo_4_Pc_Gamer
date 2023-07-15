@@ -30,6 +30,11 @@ app.get("/carrito", (req, res) => {
 
 // inicio de sesion para el usuario
 
-app.get("/login", (req, res) => {
+app.get("/register", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/register.html"))
+})
+// acceder a su cuenta
+
+app.get("/login", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/login.html"))
 })
