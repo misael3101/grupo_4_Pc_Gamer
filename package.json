@@ -4,7 +4,7 @@
   "description": "Nombre del Proyecto: TechGaming Hub\r ¡Bienvenido al repositorio de Ventas de PC Gamer y Juegos! Este proyecto tiene como objetivo crear una plataforma en línea dedicada a la venta de productos relacionados con el mundo del gaming, especialmente enfocados en PC Gamer y juegos.",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",

@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/e666ffac4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+    <!--header principal: logo, user, carito-->
+    <div class="header-container">
+        <img id="logo" src="/img/logo.png" alt="logo">
         
-        </div>
-        <nav>
+        <form class="search-flex"  action="/buscar" method="POST">
+        
+            <input class="search" type="text" name="buscar" placeholder="Buscar...">
+            <button class="boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <ul class="nav-principal">
+            <li>
+                <img id="carrito" src="/img/carrito.png">
+            </li>
+            <li>
+                <i class="fa-regular fa-circle-user"></i>
+            </li>
+        </ul>
+    </div>
+  
+    <nav>
             <!--titulo-->
-            <h1>TechGaming</h1>
+            <h1>holaa</h1>
             <!--enlaces-->
             <li><a href="http://localhost:3555/carrito">carrito de compras</a></li>
             <li><a href="http://localhost:3555/register">registrarse</a></li>

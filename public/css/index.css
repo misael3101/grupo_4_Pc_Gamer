@@ -1,0 +1,60 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header pricipal*/
+
+.header-container{
+    background-color: #bfc4e0;
+ 
+}
+
+#logo{
+    width: 30vw;
+}
+
+#carrito{
+    width: 6vw;
+    margin: 0 10px 0 0;
+}
+
+.fa-circle-user{
+    font-size: 5vw;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search-flex {
+    display: flex;
+    align-self: center;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 25px;
+
+}
+
+.search{
+    width: 30vw;
+}
+
+
+
+ul li{
+    list-style: none;
+    margin: 0 1vw 0 0;
+}
+
+.nav-principal{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
