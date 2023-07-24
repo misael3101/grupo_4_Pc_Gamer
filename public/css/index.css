@@ -57,4 +57,31 @@ ul li{
     padding: 0;
     margin: 0 10px 0 0;
 }
+/*foteer*/
+.titulo-seccion {
+    color: rgb(128, 2, 151);
+    justify-content: center;
+    display: flex;
+    
+}
+footer .copy{
+    color: black;
+    justify-content: center;
+    display: flex;
 
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.fa-twitter{
+    margin: 0 30px;
+}
+.fa-whatsapp{
+    margin: 0 30px;
+}
+.fa-facebook{
+    margin: 0 30px;
+}
