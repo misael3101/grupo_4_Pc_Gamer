@@ -2,27 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
 }
-.body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+body {
+    background-image: linear-gradient(45deg, rgb(233, 114, 114), rgb(120, 169, 231));
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
+
+/*header pricipal*/
+
+.header-container{
+    background-color: #bfc4e0;
+ 
+}
+
+#logo{
+    width: 30vw;
+}
+
+#carrito{
+    width: 6vw;
+    margin: 0 10vw 0 0;
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.nav-principal{
+    display: flex;
+    align-items: center;
+}
+
+.nav-principal a{
+    display: flex;
+    text-decoration: none;
+}
+
+.micarrito{
+    color: black;
+    display: none;
+    align-items: center;
+}
+
+.nav-principal li{
+    list-style: none;
+}
+
+
+
+
+/*main*/
+
 .container {
     width: 450px;
     padding: 20px;
-    background-color: #555764;
-    height: 75vh;
+    background-color: rgba(191, 196, 224, 0.7);
+    height: 60vh;
     margin: auto;
     display: flex;
-    margin-top: 10%;
+    margin-top: 12%;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    
 }
 
 .titulo {
@@ -37,6 +90,10 @@
     flex-direction: column;
     gap: 20px;
     color: black;
+}
+
+.nombre{
+    width: 10px;
 }
 
 .nombre, .correo, .contraseña {
@@ -60,4 +117,41 @@ input {
     background: black;
     border: none;
     color: white;
+    margin: 10px 0 0;
+}
+
+/*footer*/
+
+.footer-color{
+    background-color: #bfc4e0;
+}
+
+.titulo-seccion {
+    color: rgb(128, 2, 151);
+    justify-content: center;
+    display: flex;
+    font-size: 3vw;
+    
+}
+footer .copy{
+    color: black;
+    justify-content: center;
+    display: flex;
+    font-size: 2vw;
+
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    margin: 10px;
+}
+.fa-twitter{
+    margin: 0 30px;
+}
+.fa-whatsapp{
+    margin: 0 30px;
+}
+.fa-facebook{
+    margin: 0 30px;
 }

@@ -39,10 +39,31 @@
     border-radius: 25px;
 
 }
+.nav-principal{
+    display: flex;
+}
+
+.nav-principal a{
+    display: flex;
+    text-decoration: none;
+}
+
+.micarrito{
+    color: black;
+    display: none;
+    align-items: center;
+}
+
+.ingresar{
+    color: black;
+    display: none;
+    align-items: center;
+}
 
 .search{
     width: 30vw;
 }
+
 
 
 
@@ -57,23 +78,112 @@ ul li{
     padding: 0;
     margin: 0 10px 0 0;
 }
+
+/*slider*/
+
+.slider-frame {
+	width: 60%;
+    height: auto;
+	margin: 0px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	justify-content: space-between;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 101%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+}
+
+/*main*/
+
+h1{
+    font-size: 4vw;
+    padding: 3vw;
+}
+
+/*slider2*/
+
+.slider {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 10vw;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+
 /*foteer*/
+
+.footer-color{
+    background-color: #bfc4e0;
+}
+
 .titulo-seccion {
     color: rgb(128, 2, 151);
     justify-content: center;
     display: flex;
+    font-size: 3vw;
     
 }
 footer .copy{
     color: black;
     justify-content: center;
     display: flex;
+    font-size: 2vw;
 
 }
 .redes-sociales{
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 4vw;
     margin: 10px;
 }
 .fa-twitter{
@@ -85,3 +195,8 @@ footer .copy{
 .fa-facebook{
     margin: 0 30px;
 }
+
+
+/*responsive*/
+
+@media (min-width: )

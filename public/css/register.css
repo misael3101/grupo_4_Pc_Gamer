@@ -2,20 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
 }
-.body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
+body {
+    background-image: linear-gradient(45deg, rgb(233, 114, 114), rgb(120, 169, 231));
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
 .container {
     width: 450px;
     padding: 20px;
-    background-color: #555764;
-    height: 75vh;
+    background-color: rgba(191, 196, 224, 0.7);
+    height: 68vh;
     margin: auto;
     display: flex;
     margin-top: 10%;
