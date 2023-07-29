@@ -48,6 +48,23 @@
     text-decoration: none;
 }
 
+/* agregando barra de navegacion*/
+.barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+    background-color: #df98f5;
+    padding: 2vw;
+}
+
+.barra-navegacion ul{
+    display: flex;
+    margin: auto;
+}
+.barra-navegacion li{
+    margin: 0vw 2vw;
+}
+/*hasta aqui termina*/
+
 .micarrito{
     color: black;
     display: none;
@@ -116,6 +133,35 @@ ul li{
 	70% {margin-left: -200%;}
 
 }
+/*barra de producto*/
+.sect-P {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .div-P {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .articulo{
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .articulo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .articulo h3 {
+    margin: 5px 0;
+  }
+/* barra de producto */
 
 /*main*/
 
@@ -199,4 +245,6 @@ footer .copy{
 
 /*responsive*/
 
-@media (min-width: )
+@media (min-width: 350px){
+
+}
