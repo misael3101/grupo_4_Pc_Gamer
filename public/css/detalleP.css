@@ -4,13 +4,32 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+/* se agrego el hader al detalle de producto*/
 .header-container{
     background-color: #bfc4e0;
+    height: 20vh;
 }
 
 #logo{
-    width: 30vw;
+    width: 20vw;
+}
+
+#carrito{
+    width: 6vw;
+    margin: 0 10px 0 0;
+    
+}
+
+#carrito:hover {
+    transform: scale(1.15);
+}
+
+.fa-circle-user{
+    font-size: 5vw;
+}
+
+.fa-circle-user:hover {
+    transform: scale(1.15);
 }
 
 .header-container{
@@ -25,11 +44,54 @@
     background-color: white;
     padding: 1vw;
     border-radius: 25px;
+
+}
+.nav-principal{
+    display: flex;
+}
+
+.nav-principal a{
+    display: flex;
+    text-decoration: none;
+}
+
+.burger-menu{
+    font-size: 15px;
+}
+
+.micarrito{
+    color: black;
+    display: none;
+    align-items: center;
+}
+
+.ingresar{
+    color: black;
+    display: none;
+    align-items: center;
+}
+
+.search{
+    width: 30vw;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 1vw 0 0;
+}
+
+.nav-principal{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 10px 0 0;
 }
 
 
+/* hasta aqui es el codigo del header*/
 
 
+/*css del detalle del producto */
 .conteiner img{
     width: 300px;
     background-color: #bfc4e0;
@@ -51,4 +113,50 @@
     border: 2px solid black; /* Grosor, estilo y color del borde */
     padding: 15px;
     border-radius: 15px;
+}
+
+.boton-padre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boton{
+    background: #bfc4e0;
+    border: 2px solid black;
+    color: white;
+}
+/* hasta aqui llega */
+
+/*use el slider 2 */
+.slider {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 10vw;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
 }

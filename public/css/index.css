@@ -83,6 +83,10 @@ li a{
     color: black;
 }
 
+li a:hover{
+    background-color: #a377fc;
+}
+
 /*hasta aqui termina*/
 
 .micarrito{

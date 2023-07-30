@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e666ffac4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Productos</title>
     <link rel="stylesheet" href="/css/detalleP.css">
 </head>
 <body>
     <div class="header-container">
-        <a href="http://localhost:3555/"><img id="logo" src="/img/logo.png" alt="logo"></a>
+        <img id="logo" src="/img/logo.png" alt="logo">
+        
         <form class="search-flex"  action="/buscar" method="POST">
         
             <input class="search" type="text" name="buscar" placeholder="Buscar...">
             <button class="boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
+
+        <ul class="nav-principal">
+            <li>
+                <a href="http://localhost:3555/carrito"><img id="carrito" src="/img/carrito.png"><span class="micarrito">Mi carrito</span></a>
+            </li>
+            <li>
+                <a href="http://localhost:3555/register"><i class="fa-regular fa-circle-user"></i><p class="ingresar">Ingresar</p></a>
+            </li>
+        </ul>
     </div>
+    <!--termina el header-->
+    <!--empiezo con el detalle del producto-->
     <div class="conteiner">
        <img src="/img/PCG-1.png" alt="imgan1">
     
@@ -40,9 +55,58 @@
     
     <div class="boton-padre">
         <div class="boton">
-            <a href="" class="btn btn1">comprar</a>
+            <a href="http://localhost:3555/carrito" class="btn btn1">comprar</a>
         </div>
     </div>
+    <!-- hasta aqui llega el detalle de producto-->
+    <!--Agrefue el slider 1-->
 
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/7.jpg" alt="">
+            </div>
+    
+            <div class="slide">
+                <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/7.jpg" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
