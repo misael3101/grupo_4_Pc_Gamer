@@ -19,10 +19,19 @@
 #carrito{
     width: 6vw;
     margin: 0 10px 0 0;
+    
+}
+/**/
+#carrito:hover {
+    transform: scale(1.15);
 }
 
 .fa-circle-user{
     font-size: 5vw;
+}
+/**/
+.fa-circle-user:hover {
+    transform: scale(1.15);
 }
 
 .header-container{
@@ -161,6 +170,9 @@ ul li{
   .articulo h3 {
     margin: 5px 0;
   }
+.producto:hover{
+    transform: scale(1.15);
+}
 /* barra de producto */
 
 /*main*/
