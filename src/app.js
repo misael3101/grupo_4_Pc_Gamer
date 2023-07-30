@@ -42,3 +42,7 @@ app.get("/login", (req, res) => {
 app.get("/detalleP", (req,res) =>{
     res.sendFile(path.resolve(__dirname,"./views/productDetail.html"))
 })
+// ayuda =D
+app.get("/ayuda", (req,res) =>{
+    res.sendFile(path.resolve(__dirname,"./views/ayuda.html"))
+});
