@@ -36,6 +36,7 @@
     margin: 100px 100px 10px 100px;
     border: 2px solid black; /* Grosor, estilo y color del borde */
     padding: 15px;
+    border-radius: 15px;
 }
 
 .descripcion{
@@ -49,4 +50,5 @@
     margin-right: 50px;
     border: 2px solid black; /* Grosor, estilo y color del borde */
     padding: 15px;
+    border-radius: 15px;
 }
