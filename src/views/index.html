@@ -37,9 +37,13 @@
             <li><a href="@">Productos</a></li>
             <li><a href="@">Beneficios</a></li>
             <li><a href="@">Seguimiento</a></li>
-            <li><a href="@">Ayuda</a></li>
+            <li><a href="http://localhost:3555/ayuda">Ayuda</a></li>
         </ul>
+        <a href="#" class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </a>
     </nav>
+
 <!--barra de navegacion-->
     </header>
     <main>
@@ -53,31 +57,34 @@
         </div>
 <!--Barra de productos-->
         <h2>Ultimas novedades</h2>
-        <section class="sect-P">
-           <div class="div-P">
-            <div class="articulo">
-                <a href="http://localhost:3555/detalleP"> <img src="img/PCG-1.png" alt="Imagen 1"></a>
-                <h3>Alienware Aurora R10</h3>
-                <h3>$356.000</h3>
-              </div>
-              <div class="articulo">
-                <img src="/img/PCG-2.png" alt="Imagen 2">
-                <h3>ASUS ROG Strix G15</h3>
-                <h3>$265.000</h3>
-              </div>
-            </div>
-            <div class="div-P">
-              <div class="articulo">
-                <img src="img/producto-3.png" alt="Imagen 3">
-                <h3>Memoria RAM Vengeance</h3>
-                <h3>$34.990</h3>
-              </div>
-              <div class="articulo">
-                <img src="img/producto-4.png" alt="Imagen 4">
-                <h3>Cpu Watercooling Redragon</h3>
-                <h3>$65.829</h3>
-              </div>
-           </div>
+        <section class="flex-container">
+                <article class="articulo">
+                    <a href="http://localhost:3555/detalleP"> <img class="imagenes" src="img/PCG-1.png" alt="Imagen 1"></a>
+                    <div class="nombre-producto">Alienware Aurora R10</div>
+                    <div class="precio-producto">$356.000</div>
+                </article>
+    
+
+                <article class="articulo">
+                    <img class="imagenes" src="/img/PCG-2.png" alt="Imagen 2">
+                    <div class="nombre-producto">ASUS ROG Strix G15</div>
+                    <div class="precio-producto">$265.000</div>
+                </article>
+      
+
+                <article class="articulo">
+                    <img class="imagenes" src="img/producto-3.png" alt="Imagen 3">
+                    <div class="nombre-producto">Memoria RAM Vengeance</div>
+                    <div class="precio-producto">$34.990</div>
+                </article>
+           
+
+                <article class="articulo">
+                    <img class="imagenes" src="img/producto-4.png" alt="Imagen 4">
+                    <div class="nombre-producto">Cpu Watercooling Redragon</div>
+                    <div class="precio-producto">$65.829</div>
+                </article>
+        
         </section>
     <!--hasta aqui llega-->
     </main>
@@ -142,7 +149,7 @@
                 <i class="fab fa-whatsapp"></i>
             </div>
             <div class="contenedor">
-                <p class="copy">2023Grupo4/Todos los derechos reservados</p>
+                <p class="copy">2023Grupo4/Todos los derechos reservados.</p>
             </div>
     </footer>
 </body>

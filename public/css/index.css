@@ -7,6 +7,7 @@
 
 /*header pricipal*/
 
+
 .header-container{
     background-color: #bfc4e0;
  
@@ -19,10 +20,19 @@
 #carrito{
     width: 6vw;
     margin: 0 10px 0 0;
+    
+}
+/**/
+#carrito:hover {
+    transform: scale(1.15);
 }
 
 .fa-circle-user{
     font-size: 5vw;
+}
+/**/
+.fa-circle-user:hover {
+    transform: scale(1.15);
 }
 
 .header-container{
@@ -48,21 +58,31 @@
     text-decoration: none;
 }
 
+.burger-menu{
+    font-size: 15px;
+}
+
 /* agregando barra de navegacion*/
 .barra-navegacion{
     display: flex;
     justify-content: space-between;
     background-color: #df98f5;
-    padding: 2vw;
+    padding: 1vw;
 }
 
 .barra-navegacion ul{
-    display: flex;
+    display: none;
     margin: auto;
 }
 .barra-navegacion li{
     margin: 0vw 2vw;
 }
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
 /*hasta aqui termina*/
 
 .micarrito{
@@ -134,33 +154,37 @@ ul li{
 
 }
 /*barra de producto*/
-.sect-P {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  .div-P {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .articulo{
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .articulo img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
-  
-  .articulo h3 {
-    margin: 5px 0;
-  }
+
+h2{
+    margin: 0 15px;
+    font-size: 4vw;
+}
+
+section{
+    padding: 20px;
+    margin: auto;
+}
+
+.imagenes{
+    width: 80%;
+}
+
+article{
+    margin-bottom: 15px;
+}
+
+.articulo{
+    padding: 10px;
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.articulo:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px #df98f5;
+}
 /* barra de producto */
 
 /*main*/
@@ -216,7 +240,7 @@ h1{
     color: rgb(128, 2, 151);
     justify-content: center;
     display: flex;
-    font-size: 3vw;
+    font-size: 2vw;
     
 }
 footer .copy{
@@ -245,6 +269,63 @@ footer .copy{
 
 /*responsive*/
 
-@media (min-width: 350px){
+@media (min-width: 361px){
+    .flex-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .imagenes{
+       width: 200px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .barra-navegacion ul{
+        display: contents;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:769px){
+  
+    #logo{
+        width: 15%;
+        margin: 0 0 0 40px;
+    }
+
+    #carrito{
+        width: 3vw;
+    }
+    
+    .nav-principal {
+        margin: 0px 20px 0 0;
+    }
+
+    .fa-circle-user{
+        font-size: 3vw;
+    }
+    
+    
+    .articulos{
+        margin: 5px 5px;
+        
+
+    }
+
+    .flex-container{
+        display: flex;
+       
+    }
+
+    .barra-navegacion ul{
+        display: flex;
+    }
 
 }
