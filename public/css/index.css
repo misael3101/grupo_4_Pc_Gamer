@@ -265,8 +265,18 @@ footer .copy{
 .fa-facebook{
     margin: 0 30px;
 }
+.fa-instagram {
+    margin: 0 30px;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-whatsapp:hover, .fa-instagram:hover {
+    transform: scale(1.15);
+} 
+.copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
 
-
+ 
 /*responsive*/
 
 @media (min-width: 361px){

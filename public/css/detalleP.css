@@ -27,19 +27,28 @@
     border-radius: 25px;
 }
 
-.conteiner{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 600px;
-}
+
+
 
 .conteiner img{
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
+    width: 300px;
+    background-color: #bfc4e0;
+    margin: 100px 100px 10px 100px;
+    border: 2px solid black; /* Grosor, estilo y color del borde */
+    padding: 15px;
+    border-radius: 15px;
 }
 
-.conteiner h3{
-    margin: 5px 0;
-    text-align: left;
+.descripcion{
+    float: right;
+}
+.descripcion{
+    background-color: #bfc4e0;
+    
+    display: inline-block;   
+    margin-top: 100px;
+    margin-right: 50px;
+    border: 2px solid black; /* Grosor, estilo y color del borde */
+    padding: 15px;
+    border-radius: 15px;
 }
