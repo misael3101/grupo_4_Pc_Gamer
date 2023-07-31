@@ -91,6 +91,17 @@ ul li{
 
 
 /*css del detalle del producto */
+.conteiner{
+    display: flex;
+}
+
+.producto {
+    border-bottom: solid 1px gray;
+}
+
+
+
+
 .conteiner img{
     width: 300px;
     background-color: #bfc4e0;
@@ -120,9 +131,16 @@ ul li{
     align-items: center;
 }
 .boton{
-    background: #bfc4e0;
-    border: 2px solid black;
+    background: green;
+    border: 1px solid black;
     color: white;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
 }
 /* hasta aqui llega */
 
