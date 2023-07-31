@@ -292,7 +292,7 @@ footer .copy{
 .img {
     margin: 30px;
 }
-img:hover{
+.img:hover{
     transform: scale(1.5);
 }
 .info-text{
