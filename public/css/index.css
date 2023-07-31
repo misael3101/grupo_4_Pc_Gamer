@@ -290,7 +290,8 @@ footer .copy{
     border-radius: 10px;
 }
 .img {
-    margin: 30px;
+    margin-left: 200px;
+    
 }
 .img:hover{
     transform: scale(1.5);
