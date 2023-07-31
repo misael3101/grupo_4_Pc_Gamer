@@ -27,15 +27,14 @@
     border-radius: 25px;
 }
 
-
-
-
+/*css del detalle del producto */
 .conteiner img{
     width: 300px;
     background-color: #bfc4e0;
     margin: 100px 100px 10px 100px;
     border: 2px solid black; /* Grosor, estilo y color del borde */
     padding: 15px;
+    border-radius: 15px;
 }
 
 .descripcion{
@@ -49,4 +48,17 @@
     margin-right: 50px;
     border: 2px solid black; /* Grosor, estilo y color del borde */
     padding: 15px;
+    border-radius: 15px;
 }
+
+.boton-padre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boton{
+    background: #bfc4e0;
+    border: 2px solid black;
+    color: white;
+}
+/* hasta aqui llega */
