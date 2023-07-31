@@ -5,21 +5,31 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* se agrego el hader al detalle de producto*/
+/*header pricipal*/
+
+
 .header-container{
     background-color: #bfc4e0;
-    height: 20vh;
 }
 
 #logo{
-    width: 20vw;
+    width: 30vw;
 }
 
+#carrito{
+    width: 6vw;
+    margin: 0 10px 0 0;
+    
+}
+/**/
+#carrito:hover {
+    transform: scale(1.15);
+}
 
 .fa-circle-user{
     font-size: 5vw;
 }
-
+/**/
 .fa-circle-user:hover {
     transform: scale(1.15);
 }
@@ -51,6 +61,11 @@
     font-size: 15px;
 }
 
+.micarrito{
+    color: black;
+    display: none;
+    align-items: center;
+}
 
 .ingresar{
     color: black;
@@ -61,6 +76,9 @@
 .search{
     width: 30vw;
 }
+
+
+
 
 ul li{
     list-style: none;
@@ -73,12 +91,18 @@ ul li{
     padding: 0;
     margin: 0 10px 0 0;
 }
-/* hasta aqui es el codigo del header*/
-/*css del carrito*/
 
-/*hasta aqui llega*/
+/*carrito css*/
+.containercart{
+    text-align: center;
+}
+.containercart img{
+    margin: 0;
+}
+/*hasta aqui*/
 
-/*use el slider 2 */
+/*slider2*/
+
 .slider {
     width: 90vw;
     height: auto;

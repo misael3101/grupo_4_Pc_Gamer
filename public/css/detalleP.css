@@ -7,11 +7,10 @@
 /* se agrego el hader al detalle de producto*/
 .header-container{
     background-color: #bfc4e0;
-    height: 20vh;
 }
 
 #logo{
-    width: 20vw;
+    width: 30vw;
 }
 
 #carrito{
