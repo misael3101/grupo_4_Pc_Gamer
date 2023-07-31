@@ -3,47 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e666ffac4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Productos</title>
     <link rel="stylesheet" href="/css/detalleP.css">
 </head>
 <body>
     <div class="header-container">
-        <a href="http://localhost:3555/"><img id="logo" src="/img/logo.png" alt="logo"></a>
+        <a href="/"><img id="logo" src="/img/logo.png" alt="logo"></a>
+        
         <form class="search-flex"  action="/buscar" method="POST">
         
             <input class="search" type="text" name="buscar" placeholder="Buscar...">
             <button class="boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-    </div>
-        <!--empiezo con el detalle del producto-->
-        <div class="conteiner">
-            <img src="/img/PCG-1.png" alt="imgan1">
-     
-            <div class="descripcion">
-                 <h3>ASUS ROG Strix G15</h3>
-                 <h3>Precio actual: $356.000</h3>
-                 <h3>Sistema Operativo Windonw 11</h3>
-                 <h3>Procesador Intel® Core™ i5-10210U de 10gw Generación </h3>
-                 <h3>Diseño:</h3>
-                 <p>La ROG Strix G15 presenta un diseño moderno y elegante, con un chasis resistente construido para soportar sesiones de juegos</p>
-                 <p> prolongadas y el uso diario. Su acabado de alta calidad y su iluminación RGB personalizable en el teclado y el logotipo de ROG</p>
-                 <p>agregan un toque distintivo y llamativo.</p>
-                 <h3>pantalla:</h3>
-                 <p>La ROG Strix G15 suele venir con una pantalla Full HD de alta velocidad de actualización (generalmente 144Hz o 240Hz)</p>
-                 <p>lo que brinda imágenes nítidas y suaves, lo que es esencial para los juegos de ritmo rápido</p>
-                 <h3>Descripcion:</h3>
-                 <p>En resumen, es una computadora portátil de alto rendimiento diseñada específicamente para jugadores y usuarios exigentes</p>
-                 <p>que buscan una experiencia de juego envolvente y fluida, con un diseño atractivo y funcionalidad avanzada para garantizar</p>
-                 <p>un rendimiento optimo en cualquier caso</p>
-            </div>
-         </div>
-         
-         <div class="boton-padre">
-             <div class="boton">
-                 <a href="http://localhost:3555/carrito" class="btn btn1">comprar</a>
-             </div>
-         </div>
-         <!-- hasta aqui llega el detalle de producto-->
 
+        <ul class="nav-principal">
+            <li>
+                <a href="http://localhost:3555/carrito"><img id="carrito" src="/img/carrito.png"><span class="micarrito">Mi carrito</span></a>
+            </li>
+            <li>
+                <a href="http://localhost:3555/register"><i class="fa-regular fa-circle-user"></i><p class="ingresar">Ingresar</p></a>
+            </li>
+        </ul>
+    </div>
+    <!--termina el header-->
+
+    <!--empiezo con el detalle del producto-->
+    <div class="conteiner">
+       <img src="/img/PCG-1.png" alt="imgan1">
+
+       <div class="descripcion">
+            <h3>ASUS ROG Strix G15</h3>
+            <h3>Precio actual: $356.000</h3>
+            <h3>Sistema Operativo Windonw 11</h3>
+            <h3>Procesador Intel® Core™ i5-10210U de 10gw Generación </h3>
+            <h3>Diseño:</h3>
+            <p>La ROG Strix G15 presenta un diseño moderno y elegante, con un chasis resistente construido para soportar sesiones de juegos</p>
+            <p> prolongadas y el uso diario. Su acabado de alta calidad y su iluminación RGB personalizable en el teclado y el logotipo de ROG</p>
+            <p>agregan un toque distintivo y llamativo.</p>
+            <h3>pantalla:</h3>
+            <p>La ROG Strix G15 suele venir con una pantalla Full HD de alta velocidad de actualización (generalmente 144Hz o 240Hz)</p>
+            <p>lo que brinda imágenes nítidas y suaves, lo que es esencial para los juegos de ritmo rápido</p>
+            <h3>Descripcion:</h3>
+            <p>En resumen, es una computadora portátil de alto rendimiento diseñada específicamente para jugadores y usuarios exigentes</p>
+            <p>que buscan una experiencia de juego envolvente y fluida, con un diseño atractivo y funcionalidad avanzada para garantizar</p>
+            <p>un rendimiento optimo en cualquier caso</p>
+       </div>
+    </div>
+    
+    <div class="boton-padre">
+        <div class="boton">
+            <a href="http://localhost:3555/carrito" class="btn btn1">comprar</a>
+        </div>
+    </div>
+    <!-- hasta aqui llega el detalle de producto-->
+    
+    <!--Agregue el slider 1-->
+
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/7.jpg" alt="">
+            </div>
+    
+            <div class="slide">
+                <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/7.jpg" alt="">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
