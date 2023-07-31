@@ -4,13 +4,59 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif
 }
-body {
+main {
     background-image: linear-gradient(45deg, rgb(233, 114, 114), rgb(120, 169, 231));
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
+/*header pricipal*/
+
+.header-container{
+    background-color: #bfc4e0;
+ 
+}
+
+#logo{
+    width: 30vw;
+}
+
+#carrito{
+    width: 6vw;
+    margin: 0 10vw 0 0;
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.nav-principal{
+    display: flex;
+    align-items: center;
+}
+
+.nav-principal a{
+    display: flex;
+    text-decoration: none;
+}
+
+.micarrito{
+    color: black;
+    display: none;
+    align-items: center;
+}
+
+.nav-principal li{
+    list-style: none;
+}
+
+/*main*/
 
 .container {
     width: 450px;
@@ -63,6 +109,74 @@ input {
     color: white;
 }
 
+/*footer*/
+
+/*foteer*/
+
+.footer-color{
+    background-color: #bfc4e0;
+}
+
+.titulo-seccion {
+    color: rgb(128, 2, 151);
+    justify-content: center;
+    display: flex;
+    font-size: 2vw;
+    
+}
+footer .copy{
+    color: black;
+    justify-content: center;
+    display: flex;
+    font-size: 2vw;
+
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    margin: 10px;
+}
+.fa-twitter{
+    margin: 0 30px;
+}
+.fa-whatsapp{
+    margin: 0 30px;
+}
+.fa-facebook{
+    margin: 0 30px;
+}
+.fa-instagram {
+    margin: 0 30px;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-whatsapp:hover, .fa-instagram:hover {
+    transform: scale(1.15);
+} 
+.copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.caja-padre {
+    background-color: #cec1e7;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: #cec1e7 4px solid ;
+    border-radius: 10px;
+}
+.img {
+    margin: 30px;
+}
+.img:hover{
+    transform: scale(1.5);
+}
+.info-text{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*haciendo responsive*/
 
 @media screen and (max-width: 360px) {
@@ -99,3 +213,14 @@ input {
         width: 50%;
     }
 }
+
+@media (min-width:769px){
+  
+    #logo{
+        width: 15%;
+        margin: 0 0 0 40px;
+    }
+
+    #carrito{
+        width: 3vw;
+    }

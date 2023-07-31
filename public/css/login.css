@@ -221,13 +221,16 @@ footer .copy{
         padding: 10px;}
     }
 
+
     #logo {
-        width: 20vw; 
-        margin-bottom: 10px;}
+        width: 15%;
+        margin: 0 0 0 30px;
+    }
 
     #carrito {
-        width: 8vw; 
-        margin: 0; }
+        width: 3vw; 
+        margin: 10px 0 10px 10px; 
+    }
 
     .nav-principal {
         flex-direction: column; 
@@ -235,7 +238,8 @@ footer .copy{
     }
 
     .micarrito {
-        display: flex; 
+        display: flex;
+        margin: 10px; 
     }
 
     /* Main */
