@@ -299,7 +299,8 @@ footer .copy{
 }
 
 .img {
-    margin: 30px;
+    margin-left: 200px;
+    
 }
 .img:hover{
     transform: scale(1.5);
