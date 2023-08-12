@@ -3,46 +3,41 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-
-const pach = require("path");
-
+const routerIndex = require('./routers/index')
+const routerLogin = require('./routers/login')
+const routerAyuda = require('./routers/ayuda')
+const routerCarrito = require('./routers/productCart')
+const routerregister = require('./routers/register')
+const routerProductDetails = require('./routers/detalles')
 //declarar los recursos estaticos (img, css, etc)
 
 app.use(express.static("public"))
 
-//poner a escuchar al servidor 
+app.set('view engine', 'ejs')
 
-app.listen(3555, () => console.log("servidor corriendo  http://localhost:3555"))
-
-
+app.set('views', path.join(__dirname, 'views'));
 // manejor de rutas
 
 
 // ruta Raiz
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/index.html"))
-})
+app.use(routerIndex);
 //carrito de compras
 
-app.get("/carrito", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
-})
+app.get('/carrito', routerCarrito)
 
-// inicio de sesion para el usuario
+// registro
 
-app.get("/register", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/register.html"))
-})
+app.get('/register', routerregister)
 // acceder a su cuenta
 
-app.get("/login", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./views/login.html"))
-})
+app.use('/login', routerLogin)
+ 
  // detalle de producto
-app.get("/detalleP", (req,res) =>{
-    res.sendFile(path.resolve(__dirname,"./views/productDetail.html"))
-})
+app.get('/detalleP', routerProductDetails)
 // ayuda =D
-app.get("/ayuda", (req,res) =>{
-    res.sendFile(path.resolve(__dirname,"./views/ayuda.html"))
-});
+app.get('/ayuda', routerAyuda);
+
+
+//poner a escuchar al servidor 
+
+app.listen(3555, () => console.log("servidor corriendo  http://localhost:3555"))
