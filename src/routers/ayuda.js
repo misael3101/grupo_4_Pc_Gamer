@@ -4,7 +4,7 @@ const router = express.Router()
 
 const ayudaControlador = require('../controllers/ayudaController');
 
-router.get('/', ayudaControlador.ayuda);
+router.get('/ayuda', ayudaControlador.ayuda);
 
 module.exports = router;
 
