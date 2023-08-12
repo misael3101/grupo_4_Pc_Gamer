@@ -10,25 +10,9 @@
     <link rel="stylesheet" href="/css/detalleP.css">
 </head>
 <body>
-    <div class="header-container">
-        <a href="/"><img id="logo" src="/img/logo.png" alt="logo"></a>
-        
-        <form class="search-flex"  action="/buscar" method="POST">
-        
-            <input class="search" type="text" name="buscar" placeholder="Buscar...">
-            <button class="boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-
-        <ul class="nav-principal">
-            <li>
-                <a href="http://localhost:3555/carrito"><img id="carrito" src="/img/carrito.png"><span class="micarrito">Mi carrito</span></a>
-            </li>
-            <li>
-                <a href="http://localhost:3555/register"><i class="fa-regular fa-circle-user"></i><p class="ingresar">Ingresar</p></a>
-            </li>
-        </ul>
-    </div>
-    <!--termina el header-->
+<!--Header--> 
+<%- include("partials/header.ejs") %>
+<!--header-->
 
     <!--empiezo con el detalle del producto-->
     <div class="conteiner">
@@ -103,5 +87,8 @@
             </div>
         </div>
     </div>
+
+    <!--footer-->
+<%- include("partials/footer.ejs") %>
 </body>
 </html>

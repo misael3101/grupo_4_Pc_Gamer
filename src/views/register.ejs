@@ -11,20 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <a href="/"><img id="logo" src="/img/logo.png" alt="logo"></a> 
-            
-    
-            <ul class="nav-principal">
-                <li>
-                    <a href="http://localhost:3555/carrito">
-                        <img id="carrito" src="/img/carrito.png"><span class="micarrito">Mi carrito</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+<!--Header--> 
+<%- include("partials/header.ejs") %>
+<!--header-->
 
         
     <main>
@@ -64,21 +53,8 @@
             </div>
     </main>
     
-    <footer class="footer-color">
-        <ul>
-            <div class="contenedor">
-                <h2 class="titulo-seccion">Contactanos</h2>
-            </div>
-            <div class="redes-sociales">
-                <i class ="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-whatsapp"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
-            <div class="contenedor">
-                <p class="copy">2023Grupo4/Todos los derechos reservados.</p>
-            </div>
-    </footer>
+<!--footer-->
+<%- include("partials/footer.ejs") %>
 
     
 </body>

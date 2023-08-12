@@ -11,41 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <!--header principal: logo, user, carito-->
-    <div class="header-container">
-        <img id="logo" src="/img/logo.png" alt="logo">
-        
-        <form class="search-flex"  action="/buscar" method="POST">
-        
-            <input class="search" type="text" name="buscar" placeholder="Buscar...">
-            <button class="boton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-
-        <ul class="nav-principal">
-            <li>
-                <a href="http://localhost:3555/carrito"><img id="carrito" src="/img/carrito.png"><span class="micarrito">Mi carrito</span></a>
-            </li>
-            <li>
-                <a href="http://localhost:3555/register"><i class="fa-regular fa-circle-user"></i><p class="ingresar">Ingresar</p></a>
-            </li>
-        </ul>
-    </div>
-<!--barra de navegacion-->
-    <nav class="barra-navegacion">
-        <ul class="barra-i">
-            <li><a href="@">Productos</a></li>
-            <li><a href="@">Beneficios</a></li>
-            <li><a href="@">Seguimiento</a></li>
-            <li><a href="http://localhost:3555/ayuda">Ayuda</a></li>
-        </ul>
-        <a href="#" class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </a>
-    </nav>
-
-<!--barra de navegacion-->
-    </header>
+<%- include("partials/header.ejs") %>
     <main>
 <!--slider-->
         <div class="slider-frame">
@@ -165,23 +131,7 @@
         </div>
 
     </div>
-    
-
-
-    <footer class="footer-color">
-        <ul>
-            <div class="contenedor">
-                <h2 class="titulo-seccion">Contactanos</h2>
-            </div>
-            <div class="redes-sociales">
-                <i class ="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-whatsapp"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
-            <div class="contenedor">
-                <p class="copy">2023Grupo4/Todos los derechos reservados.</p>
-            </div>
-    </footer>
+<!--footer-->
+<%- include("partials/footer.ejs") %>
 </body>
 </html>
