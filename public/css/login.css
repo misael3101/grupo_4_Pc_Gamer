@@ -8,19 +8,10 @@ body {
     background-image: linear-gradient(45deg, rgb(233, 114, 114), rgb(120, 169, 231));
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-
 /*header pricipal*/
 
 .header-container{
     background-color: #bfc4e0;
- 
 }
 
 #logo{
@@ -29,20 +20,41 @@ main{
 
 #carrito{
     width: 6vw;
-    margin: 0 10vw 0 0;
+    margin: 0 10px 0 0;
+    
+}
+/**/
+#carrito:hover {
+    transform: scale(1.15);
 }
 
+.fa-circle-user{
+    font-size: 5vw;
+}
+/**/
+.fa-circle-user:hover {
+    transform: scale(1.15);
+}
 
 .header-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 60%;
 }
 
+.search-flex {
+    display: flex;
+    display: none;
+    align-self: center;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 25px;
+
+}
 
 .nav-principal{
     display: flex;
-    align-items: center;
 }
 
 .nav-principal a{
@@ -50,20 +62,75 @@ main{
     text-decoration: none;
 }
 
+.burger-menu{
+    font-size: 15px;
+    margin:auto;
+}
+
+/* agregando barra de navegacion*/
+.barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+    background-color: #df98f5;
+    padding: 1vw;
+}
+
+.barra-navegacion ul{
+    display: none;
+    margin: auto;
+}
+.barra-navegacion li{
+    margin: 0vw 2vw;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    background-color: #a377fc;
+}
+
+/*hasta aqui termina*/
+
 .micarrito{
     color: black;
     display: none;
     align-items: center;
 }
 
-.nav-principal li{
-    list-style: none;
+.ingresar{
+    color: black;
+    display: none;
+    align-items: center;
+}
+
+.search{
+    width: 30vw;
+    display: none;
 }
 
 
+ul li{
+    list-style: none;
+    margin: 0 1vw 0 0;
+}
 
+.nav-principal{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
 
 /*main*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
 .container {
     width: 450px;
@@ -113,11 +180,17 @@ input {
     align-items: center;
 }
 /*este es el boton */
-.boton {
+.boton1{
     background: black;
     border: none;
     color: white;
-    margin: 10px 0 0;
+    margin-top:10px
+}
+.boton2 {
+    background: black;
+    border: none;
+    color: white;
+    margin-left: 10px;
 }
 
 /*footer*/
@@ -158,110 +231,68 @@ footer .copy{
 
 /*responsive del login*/
 
-@media (max-width: 360px) {
+@media (min-width: 361px) {
     /*header principal*/
-    #logo {
-        width: 50vw;
+.container{
+    width: 300px;
+}
+    .flex-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    #carrito {
-        width: 10vw;
-        margin: 5vw ;
+    .burger-menu{
+        display: none;
     }
 
-    .nav-principal {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .micarrito {
+    .barra-navegacion ul{
         display: flex;
     }
-
-    .nav-principal li {
-        margin-bottom: 10px;
-    }
-
-    /*main*/
     .container {
         width: 90%;
-        padding: 15px;
+        height: auto;
         margin-top: 5%;
     }
 
     .titulo {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .div_padre {
+        padding: 10px;
         gap: 10px;
     }
 
-    /*footer*/
-    .titulo-seccion {
-        font-size: 16px;
-    }
-
-    footer .copy {
+    input {
         font-size: 14px;
-    }
-
-    .redes-sociales {
-        font-size: 16px;
+        padding: 8px;
     }
 }
 
-@media screen and (max-width: 769px) {
-    body {
-        font-size: 14px;
+@media (min-width: 769px) {
+
+    .container{
+        width: 350px;
+        height: 60vh;
     }
-
-    /* Header principal */
-    .header-container { 
-        padding: 10px;}
-    }
-
-
-    #logo {
+    #logo{
         width: 15%;
-        margin: 0 0 0 30px;
+        margin: 0 0 0 40px;
     }
 
-    #carrito {
-        width: 3vw; 
-        margin: 10px 0 10px 10px; 
+    #carrito{
+        width: 3vw;
     }
-
+    
     .nav-principal {
-        flex-direction: column; 
-        align-items: center; 
+        margin: 0px 20px 0 0;
     }
 
-    .micarrito {
-        display: flex;
-        margin: 10px; 
+    .fa-circle-user{
+        font-size: 3vw;
     }
-
-    /* Main */
-    .container {
-        width: 100%; 
-        max-width: 450px; 
-        margin-top: 10%; 
+    .boton{
+        margin-left: 10px;
     }
-
-    .titulo {
-        font-size: 20px; 
-    }
-
-    /* Footer */
-    .titulo-seccion {
-        font-size: 1,5vw; 
-    }
-
-    footer .copy {
-        font-size: 1,5vw; 
-    }
-
-    .redes-sociales {
-        font-size: 4vw; 
-    }
+}
