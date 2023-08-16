@@ -8,7 +8,7 @@ const routerLogin = require('./routers/login')
 const routerAyuda = require('./routers/ayuda')
 const routerCarrito = require('./routers/productCart')
 const routerregister = require('./routers/register')
-const routerProductDetails = require('./routers/detalles')
+const routerProductDetails = require('./routers/detalles');
 //declarar los recursos estaticos (img, css, etc)
 
 app.use(express.static("public"))

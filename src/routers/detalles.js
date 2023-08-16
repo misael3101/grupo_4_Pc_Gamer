@@ -6,4 +6,6 @@ const productDetailsControlador = require('../controllers/productDetailsControll
 
 router.get('/detalleP', productDetailsControlador.productDetails);
 
+
+
 module.exports = router;
