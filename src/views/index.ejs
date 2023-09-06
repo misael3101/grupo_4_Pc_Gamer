@@ -23,35 +23,24 @@
         </div>
 <!--Barra de productos-->
         <h2>Ultimas novedades</h2>
-        <section class="flex-container">
-                <article class="articulo">
-                    <a href="http://localhost:3555/detalleP"> <img class="imagenes" src="img/PCG-1.png" alt="Imagen 1"></a>
-                    <div class="nombre-producto">Alienware Aurora R10</div>
-                    <div class="precio-producto">$356.000</div>
-                </article>
-    
-
-                <article class="articulo">
-                    <img class="imagenes" src="/img/PCG-2.png" alt="Imagen 2">
-                    <div class="nombre-producto">ASUS ROG Strix G15</div>
-                    <div class="precio-producto">$265.000</div>
-                </article>
-      
-
-                <article class="articulo">
-                    <img class="imagenes" src="img/producto-3.png" alt="Imagen 3">
-                    <div class="nombre-producto">Memoria RAM Vengeance</div>
-                    <div class="precio-producto">$34.990</div>
-                </article>
-           
-
-                <article class="articulo">
-                    <img class="imagenes" src="img/producto-4.png" alt="Imagen 4">
-                    <div class="nombre-producto">Cpu Watercooling Redragon</div>
-                    <div class="precio-producto">$65.829</div>
-                </article>
         
+    
+    
+          <section class="flex-container">
+            
+            <% productos.forEach(producto => { %>
+
+                <article class="articulo">
+                    <a href="http://localhost:3555/producto/detalleP/<%= producto.id %>"> <img class="imagenes" src="img/PCG-1.png" alt="Imagen 1"></a>
+                    <div class="nombre-producto"><%= producto.name %></div>
+                    <div class="precio-producto"><%= producto.price %></div>
+                </article>
+          
+            <% }) %>
         </section>
+     
+  
+    
     <!--hasta aqui llega-->
     </main>
 

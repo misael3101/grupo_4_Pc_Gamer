@@ -8,10 +8,13 @@ const routerLogin = require('./routers/login')
 const routerAyuda = require('./routers/ayuda')
 const routerCarrito = require('./routers/productCart')
 const routerregister = require('./routers/register')
-const routerProductDetails = require('./routers/detalles');
+const productsRouter = require('./routers/productos');
 //declarar los recursos estaticos (img, css, etc)
 
 app.use(express.static("public"))
+app.use(express.urlencoded({ extended: false })); 
+app.use(express.json()); 
+//app.use(methodOverride('_method')); 
 
 app.set('view engine', 'ejs')
 
@@ -33,9 +36,11 @@ app.get('/register', routerregister)
 app.use('/login', routerLogin)
  
  // detalle de producto
-app.get('/detalleP', routerProductDetails)
+ app.use('/producto', productsRouter);
+
+
 // ayuda =D
-app.get('/ayuda', routerAyuda);
+app.use('/ayuda', routerAyuda);
 
 
 //poner a escuchar al servidor 
