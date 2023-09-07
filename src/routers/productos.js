@@ -8,6 +8,7 @@ router.get('/detalleP/:id', productControlador.productDetails);
 
 router.get('/create-product/', productControlador.create);
 
+router.get('/edit-product/:id' , productControlador.edit)
 
 
 

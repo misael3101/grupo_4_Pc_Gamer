@@ -18,6 +18,10 @@ let controlador = {
     create: (req, res) => {
 		res.render('crearproducto')
 	},
+
+    edit: (req, res) => {
+		res.render('editarproducto')
+	},
 }
 
 module.exports = controlador;

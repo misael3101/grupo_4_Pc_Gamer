@@ -160,6 +160,7 @@ ul li{
 }
 .descripcion{
     flex: 1;
+    height: 200px;
     display: flex;
     background-color: #bfc4e0;
     display: inline-block;   
@@ -169,7 +170,6 @@ ul li{
 
 .btn {
     margin: 20px;
-    margin-left: 120px;
     padding: 5px;
     font-size: 15px;
     font-family: sans-serif;
@@ -179,6 +179,20 @@ ul li{
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+}
+
+.edit-botton{
+    margin: 20px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: solid 1px black ;
+    border-radius: 5px;
+    background: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
