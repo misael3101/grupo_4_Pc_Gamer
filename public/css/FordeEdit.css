@@ -142,7 +142,7 @@ ul li{
     text-align: center;
   }
 
-  .product-detail {
+  .conteriner-form {
     background-color: rgba(191, 196, 224, 0.7);
     border-radius: 8px;
     font-size: 10px;
@@ -150,32 +150,39 @@ ul li{
     overflow: hidden;
     margin: auto;
     justify-items: center;
-    width: 50vw;
-  } 
+    width: 90vw;
+    height: 100%;
+  }  
+
+  .product-detail {
+    max-width: 95%;
+    margin: auto
+  }
+
 
 .cont-input{
     margin: 15px;
   }
 .nom-price{
     margin: 5px;
-    display: flex;
+    /*display: flex;*/
     padding: 0 70px;
 }
 
 .descu-categ{
     margin: 5px;
-    display: flex;
+    /*display: flex;*/
     padding: 0 70px;
 }
 
 .desc-img{
-    margin: 5px;
-    display: flex;
-    padding: 0 70px;
+    margin: 0px;
+    
+    padding: 0px 2%;
 }
 
   .form-label {
-    display: inline-block;
+    /*display: inline-block;*/
     font-size: 1.6em;
     margin: 10px 0;
   }
@@ -207,7 +214,7 @@ ul li{
     text-transform: uppercase;
     text-decoration: none;
 }
-  
+
   
 /*use el slider 2 */
 .slider {
@@ -318,7 +325,30 @@ footer .copy{
     .fa-circle-user{
         font-size: 3vw;
     }
+
+    .form-input{
+    display: flex;
+    width: 40vw;
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border: solid 2px gray;
+    padding: 0 15px;
+    }
+
+    .conteriner-form form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    }
+
+    .desc-img input{
+        width: 50%;
+    }
 }
+
 
 
 
