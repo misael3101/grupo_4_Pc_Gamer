@@ -1,92 +1,92 @@
 [
-  {
-    "id": 1,
-    "name": "Teclado mecánico RGB",
-    "description": "Teclado mecánico con retroiluminación RGB personalizable para una experiencia de juego inmersiva.",
-    "price": 89.99,
-    "discount": 10,
-    "image": "PCG-1.png",
-    "category": "Periféricos"
-  },
-  {
-    "id": 2,
-    "name": "Mouse gamer con sensor óptico",
-    "description": "Mouse de alta precisión diseñado para juegos de alta velocidad con sensor óptico de 16000 DPI.",
-    "price": 59.99,
-    "discount": 15,
-    "image": "PCG-1.png",
-    "category": "Periféricos"
-  },
-  {
-    "id": 3,
-    "name": "Tarjeta gráfica NVIDIA GeForce RTX 3080",
-    "description": "Potente tarjeta gráfica para experiencias de juego en 4K con trazado de rayos y DLSS.",
-    "price": 799.99,
-    "discount": 5,
-    "image": "PCG-1.png",
-    "category": "Componentes"
-  },
-  {
-    "id": 4,
-    "name": "Monitor gaming 27 pulgadas 144Hz",
-    "description": "Monitor de alta frecuencia de actualización para una jugabilidad suave y rápida.",
-    "price": 299.99,
-    "discount": 0,
-    "image": "PCG-1.png",
-    "category": "Monitores"
-  },
-  {
-    "id": 5,
-    "name": "Auriculares gaming con sonido envolvente",
-    "description": "Auriculares diseñados para una experiencia de juego inmersiva con sonido envolvente 7.1.",
-    "price": 69.99,
-    "discount": 20,
-    "image": "PCG-1.png",
-    "category": "Audio"
-  },
-  {
-    "id": 6,
-    "name": "Silla gaming ergonómica",
-    "description": "Silla diseñada para proporcionar comodidad durante largas sesiones de juego con soporte lumbar ajustable.",
-    "price": 199.99,
-    "discount": 0,
-    "image": "PCG-1.png",
-    "category": "Muebles"
-  },
-  {
-    "id": 7,
-    "name": "SSD NVMe 1TB",
-    "description": "Unidad de estado sólido de alta velocidad para una carga rápida de juegos y tiempos de inicio.",
-    "price": 129.99,
-    "discount": 8,
-    "image": "PCG-1.png",
-    "category": "Almacenamiento"
-  },
-  {
-    "id": 8,
-    "name": "Procesador AMD Ryzen 9 5900X",
-    "description": "Procesador de alto rendimiento para juegos y aplicaciones de productividad.",
-    "price": 399.99,
-    "discount": 0,
-    "image": "PCG-1.png",
-    "category": "Componentes"
-  },
-  {
-    "id": 9,
-    "name": "Tarjeta madre ASUS ROG Strix B550-F",
-    "description": "Placa base de alta gama compatible con procesadores Ryzen y tarjetas gráficas PCIe 4.0.",
-    "price": 179.99,
-    "discount": 10,
-    "image": "PCG-1.png",
-    "category": "Componentes"
-  },
-  {
-    "id": 10,
-    "name": "Juego: Cyberpunk 2077",
-    "description": "Videojuego de mundo abierto con gráficos impresionantes y una historia cautivadora.",
-    "price": 49.99,
-    "discount": 25,
-    "image": "PCG-1.png",
-    "category": "Juegos"
-  }
+ {
+  "id": 1,
+  "name": "Teclado mecánico RGB",
+  "description": "Teclado mecánico con retroiluminación RGB personalizable para una experiencia de juego inmersiva.",
+  "price": 89.99,
+  "discount": 10,
+  "image": "PCG-1.png",
+  "category": "Periféricos"
+ },
+ {
+  "id": 2,
+  "name": "Mouse gamer con sensor óptico",
+  "description": "Mouse de alta precisión diseñado para juegos de alta velocidad con sensor óptico de 16000 DPI.",
+  "price": 59.99,
+  "discount": 15,
+  "image": "PCG-1.png",
+  "category": "Periféricos"
+ },
+ {
+  "id": 3,
+  "name": "Tarjeta gráfica NVIDIA GeForce RTX 3080",
+  "description": "Potente tarjeta gráfica para experiencias de juego en 4K con trazado de rayos y DLSS.",
+  "price": 799.99,
+  "discount": 5,
+  "image": "PCG-1.png",
+  "category": "Componentes"
+ },
+ {
+  "id": 4,
+  "name": "Monitor gaming 27 pulgadas 144Hz",
+  "description": "Monitor de alta frecuencia de actualización para una jugabilidad suave y rápida.",
+  "price": 299.99,
+  "discount": 0,
+  "image": "PCG-1.png",
+  "category": "Monitores"
+ },
+ {
+  "id": 5,
+  "name": "Auriculares gaming con sonido envolvente",
+  "description": "Auriculares diseñados para una experiencia de juego inmersiva con sonido envolvente 7.1.",
+  "price": 69.99,
+  "discount": 20,
+  "image": "PCG-1.png",
+  "category": "Audio"
+ },
+ {
+  "id": 6,
+  "name": "Silla gaming ergonómica",
+  "description": "Silla diseñada para proporcionar comodidad durante largas sesiones de juego con soporte lumbar ajustable.",
+  "price": 199.99,
+  "discount": 0,
+  "image": "PCG-1.png",
+  "category": "Muebles"
+ },
+ {
+  "id": 7,
+  "name": "SSD NVMe 1TB",
+  "description": "Unidad de estado sólido de alta velocidad para una carga rápida de juegos y tiempos de inicio.",
+  "price": 129.99,
+  "discount": 8,
+  "image": "PCG-1.png",
+  "category": "Almacenamiento"
+ },
+ {
+  "id": 8,
+  "name": "Procesador AMD Ryzen 9 5900X",
+  "description": "Procesador de alto rendimiento para juegos y aplicaciones de productividad.",
+  "price": 399.99,
+  "discount": 0,
+  "image": "PCG-1.png",
+  "category": "Componentes"
+ },
+ {
+  "id": 9,
+  "name": "Tarjeta madre ASUS ROG Strix B550-F",
+  "description": "Placa base de alta gama compatible con procesadores Ryzen y tarjetas gráficas PCIe 4.0.",
+  "price": 179.99,
+  "discount": 10,
+  "image": "PCG-1.png",
+  "category": "Componentes"
+ },
+ {
+  "id": 10,
+  "name": "Juego: Cyberpunk 2077",
+  "description": "Videojuego de mundo abierto con gráficos impresionantes y una historia cautivadora.",
+  "price": 49.99,
+  "discount": 25,
+  "image": "PCG-1.png",
+  "category": "Juegos"
+ }
 ]
