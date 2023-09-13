@@ -18,7 +18,7 @@
 <!--main del register-->   
     <main>
         <div class="container">
-                <form action="" class="formulario">
+                <form action="" class="formulario" method="post" >
                     <h2 class="titulo">REGISTRARSE</h2>
                     <div class="div_padre">
     
@@ -43,6 +43,16 @@
                             <label for="contraseña">contraseña</label>
                             <input type="password" name="contraseña" id="contraseña" placeholder="******">
                         </div>
+                        <!--Imagen-->
+                        <label for="imagendeusuario" class="form-label">Imagen de perfin:</label>
+                        <input type="file" id="product-image" name="product-image">
+                        <!--Categoria-->
+                        <label for="categoria" class="form-label">Genero:</label>
+                        <select name="category" id="category" class="form-input">
+                            <option value="">Elegí</option>
+                            <option value="">Masculino</option>
+                            <option value="" >Femenino</option>
+                        </select>
                         <!--en caso de que ya tenga cuenta-->
                         <div class="cuenta">
                             <p>ya tienes una cuenta? <a href="http://localhost:3555/login">toca aqui</a></p>
