@@ -5,17 +5,17 @@
   "description": "Teclado mecánico con retroiluminación RGB personalizable para una experiencia de juego inmersiva.",
   "price": 89.99,
   "discount": 10,
-  "image": "PCG-1.png",
+  "image": "Teclado gamer rgb.jpg",
   "category": "Periféricos"
  },
  {
-  "id": 2,
+  "id": "2",
   "name": "Mouse gamer con sensor óptico",
-  "description": "Mouse de alta precisión diseñado para juegos de alta velocidad con sensor óptico de 16000 DPI.",
-  "price": 59.99,
-  "discount": 15,
-  "image": "PCG-1.png",
-  "category": "Periféricos"
+  "description": "Hola",
+  "price": "59.99",
+  "discount": "15",
+  "image": "Mouse gamer con sensor óptico.png",
+  "category": ""
  },
  {
   "id": 3,
@@ -23,7 +23,7 @@
   "description": "Potente tarjeta gráfica para experiencias de juego en 4K con trazado de rayos y DLSS.",
   "price": 799.99,
   "discount": 5,
-  "image": "PCG-1.png",
+  "image": "Tarjeta gráfica NVIDIA GeForce RTX 3080.jpg",
   "category": "Componentes"
  },
  {
@@ -32,7 +32,7 @@
   "description": "Monitor de alta frecuencia de actualización para una jugabilidad suave y rápida.",
   "price": 299.99,
   "discount": 0,
-  "image": "PCG-1.png",
+  "image": "Monitor gaming 27 pulgadas 144Hz.jpg",
   "category": "Monitores"
  },
  {
@@ -41,7 +41,7 @@
   "description": "Auriculares diseñados para una experiencia de juego inmersiva con sonido envolvente 7.1.",
   "price": 69.99,
   "discount": 20,
-  "image": "PCG-1.png",
+  "image": "Auriculares gaming con sonido envolvente.jpg",
   "category": "Audio"
  },
  {
@@ -50,7 +50,7 @@
   "description": "Silla diseñada para proporcionar comodidad durante largas sesiones de juego con soporte lumbar ajustable.",
   "price": 199.99,
   "discount": 0,
-  "image": "PCG-1.png",
+  "image": "Silla gaming ergonómica.jpg",
   "category": "Muebles"
  },
  {
@@ -59,7 +59,7 @@
   "description": "Unidad de estado sólido de alta velocidad para una carga rápida de juegos y tiempos de inicio.",
   "price": 129.99,
   "discount": 8,
-  "image": "PCG-1.png",
+  "image": "SSD NVMe 1TB.jpg",
   "category": "Almacenamiento"
  },
  {
@@ -68,7 +68,7 @@
   "description": "Procesador de alto rendimiento para juegos y aplicaciones de productividad.",
   "price": 399.99,
   "discount": 0,
-  "image": "PCG-1.png",
+  "image": "Procesador AMD Ryzen 9 5900X.jpg",
   "category": "Componentes"
  },
  {
@@ -77,16 +77,16 @@
   "description": "Placa base de alta gama compatible con procesadores Ryzen y tarjetas gráficas PCIe 4.0.",
   "price": 179.99,
   "discount": 10,
-  "image": "PCG-1.png",
+  "image": "Tarjeta madre ASUS ROG Strix B550-F.jpg",
   "category": "Componentes"
  },
  {
-  "id": 10,
+  "id": "10",
   "name": "Juego: Cyberpunk 2077",
-  "description": "Videojuego de mundo abierto con gráficos impresionantes y una historia cautivadora.",
-  "price": 49.99,
-  "discount": 25,
-  "image": "PCG-1.png",
-  "category": "Juegos"
+  "description": "Juego muy bueno",
+  "price": "49.99",
+  "discount": "25",
+  "image": "Cyberpunk 2077.jpg",
+  "category": "visited"
  }
 ]

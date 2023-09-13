@@ -31,7 +31,9 @@
             <% productos.forEach(producto => { %>
 
                 <article class="articulo">
-                    <a href="http://localhost:3555/producto/detalleP/<%= producto.id %>"> <img class="imagenes" src="img/PCG-1.png" alt="Imagen 1"></a>
+                    <a href="http://localhost:3555/producto/detalleP/<%= producto.id %>"> 
+                        <img class="imagenes" src="/img/<%= producto.image %>" alt="imagen de producto">
+                    </a>
                     <div class="nombre-producto"><%= producto.name %></div>
                     <div class="precio-producto"><%= producto.price %></div>
                 </article>
