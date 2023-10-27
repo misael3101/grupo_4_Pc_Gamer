@@ -30,7 +30,7 @@ app.get('/carrito', routerCarrito)
 
 // registro
 
-app.get('/register', routerregister)
+app.get('/register', routerLogin)
 // acceder a su cuenta
 
 app.use('/login', routerLogin)

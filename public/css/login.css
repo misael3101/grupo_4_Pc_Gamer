@@ -273,8 +273,8 @@ footer .copy{
 @media (min-width: 769px) {
 
     .container{
-        width: 350px;
-        height: 60vh;
+        width: 35%;
+        height: 37vh;
     }
     #logo{
         width: 15%;

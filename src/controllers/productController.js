@@ -1,4 +1,75 @@
-const { Console } = require('console');
+
+
+
+
+const db = require("../database/models");
+
+let controlador = {
+  productDetails: function(req, res) {
+    id = req.params.id  
+    db.Productos.findByPk(id).then(function(productos){
+      res.render('productDetail', {productos : productos});
+    })
+      },
+      
+      
+  
+  create: (req, res) => {
+  res.render('crearproducto')
+},
+  prossCreate: (req, res) => {
+
+    db.Productos.create({
+      nombre: req.body.name,
+      descripcion: req.body.description,
+      precio: req.body.price,
+      image: "PCG-1.png",
+ 
+
+  })
+  .then((respuesta)=>{
+      res.redirect("/");
+  })
+  },
+      
+  edit: (req, res) => {
+    db.Productos.findByPk(req.params.id)
+    .then(function(producto) {
+        res.render('editarproducto', {productoAEditar:producto});
+    })
+  },
+
+  edicion: (req, res) => {
+    db.Productos.update({
+      nombre: req.body.name,
+      descripcion: req.body.description,
+      precio: req.body.price,
+      //imagen: req.file.filename,
+  }, {
+      where: {
+          id: req.params.id
+      }
+  });
+  res.redirect("/");
+    },
+
+    destroy : (req, res) => {
+      db.Productos.destroy({
+        where: {
+            id: req.params.id //Si le pongo la coma marca error
+        } 
+    })
+    .then((result)=>{
+        res.redirect("/");
+    })
+
+
+}
+}
+
+module.exports = controlador
+
+/*const { Console } = require('console');
 const fs = require('fs');
 const path = require('path');
 
@@ -109,6 +180,5 @@ let controlador = {
 	}
 
 
-}
+}*/
 
-module.exports = controlador
