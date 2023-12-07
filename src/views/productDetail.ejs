@@ -8,23 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Productos</title>
     <link rel="stylesheet" href="/css/detalleP.css">
+    <script src="//code.tidio.co/mloqng3fmqeerxntrqhe9y4kcjalrr5u.js" async></script>
 </head>
 <body>
 <!--Header--> 
 <%- include("partials/header.ejs") %>
 <!--header-->
-
+<main>
     <!--empiezo con el detalle del producto-->
     <div class="conteiner">
-       <img src="/img/<%= productos.imagen %>" alt="imgan1" class="imgP">
-
+       
+       <div class="image-conteiner">
+        <img src="/img/<%= productos.imagen %>" alt="imgan1" class="imgP">
+       </div> 
        <div class="descripcion">
             <div class="producto">
-                <h3><%= productos.nombre %></h3>
-                <h3>Descuento:<%= productos.discount%></h3>
-                
+                <h3 class="nombreProducto"><%= productos.nombre %></h3>
+             </div>
+            <div>
+                <h3 class="Precio">Precio: <p class="colorPrecio"><%= productos.precio %>$</p></h3>
             </div>
-            <h3 class="Precio">Precio actual: <%= productos.precio %></h3>
             <h3>Descripcion:</h3>
             <div class="div-P">
             <p><%= productos.descripcion %></p>
@@ -33,13 +36,27 @@
             <div class="div-btn">
                <button class="btn"> <span></span>COMPRAR</button>
             </div>
-
+            <% if (locals.isLogged) { %>
             <a href="/producto/edit-product/<%= productos.id %>" class="edit-botton">Editar</a>
             <form action="/producto/delete/<%= productos.id %>" method="POST" style="display: inline-flex">
                 <button type="submit" class="action-button delete">ELIMINAR</button>
+                <% } %>
        </div>
     </div>
+    <div class="comentarios-seccion">
+        <h3>Comentarios</h3>
+        <div class="comentario">
+            <p>¡Este producto es increíble!</p>
+        </div>
+        <div class="comentario">
+            <p>Me encanta la calidad y el diseño.</p>
+        </div>
+        <div class="comentario">
+            <p>Definitivamente lo recomendaría a mis amigos.</p>
+        </div>
+    </div>
     
+</main>    
     <!-- hasta aqui llega el detalle de producto-->
     
     <!--Agregue el slider 1-->

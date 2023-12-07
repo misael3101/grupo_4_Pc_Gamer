@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="//code.tidio.co/mloqng3fmqeerxntrqhe9y4kcjalrr5u.js" async></script>
 </head>
 <body>
    
@@ -16,36 +17,53 @@
 <%- include("partials/header.ejs") %>
 <!--header-->  
 <main> 
+
+    <video autoplay muted  id="myVideo">
+        <source src="./img/videoplayback.mp4" type="video/mp4">
+        Tu navegador no soporta el tag de video.
+      </video>   
+
     <div class="container">
-        <form action="" class="formulario">
+        <form action="/usuario/login" class="formulario" method="post">
             <h2 class="titulo">INICIAR SESION</h2>
-            <div class="div_padre">
+
+            <ul class="errores">
+                 </ul>
+                 <div class="div_padre">
 
 
 
                 </div>
                 <!--correo-->
                 <div class="correo">
-                    <label for="correo">correo</label>
+                    <label for="correo">Correo electronico</label>
                     <input type="email" name="correo" id="correo" placeholder="juanperez@gmail.com">
+                    <% if (locals.errors && errors.correo) { %>
+                    <div class="mensaje-error">
+                        <%= errors.correo.msg %>
+                    </div>
+                        <% } %>
                 </div>
                 <!--contraseña-->
                 <div class="contraseña">
-                    <label for="contraseña">contraseña</label>
-                    <input type="password" name="contraseña" id="contraseña" placeholder="******">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contrasena" id="contraseña" placeholder="******">
                 </div>
                 <!--en caso de que ya tenga cuenta-->
                 <div class="cuenta">
-                    <input class="boton1" type="submit" value="acceder">
+                    <input class="boton1" type="submit" value="Acceder">
                 </div>
                 <div class="cuenta">
-                        <p>no tenes cuenta? <a href="http://localhost:3555/register">toca aqui</a></p>
-                        <input class="boton2" type="submit" value="registrar">
+                        <p>no tenes cuenta? <a href="http://localhost:3555/usuario/register">toca aqui</a></p>
+                    
                     </div>
             </div>
         </form>
     </div>
 </main> 
+
+<script src="/js/login.js"></script>
+
 <div class="caja">
     <img src="" alt="">
 

@@ -24,6 +24,26 @@
     margin: 0 10px 0 0;
     
 }
+
+.nameuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkperfil{
+    margin: 0%;
+    width: 13vw;
+    height: 4vw;
+}
+
+.fotoperfil{
+    width: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 /**/
 #carrito:hover {
     transform: scale(1.15);

@@ -3,17 +3,36 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const session = require('express-session')
+
+const userLoggedMiddleware = require('./middleware/userLoggedMiddleware')
+
+
+
+
+//requerir rutas
 const routerIndex = require('./routers/index')
 const routerLogin = require('./routers/login')
 const routerAyuda = require('./routers/ayuda')
 const routerCarrito = require('./routers/productCart')
-const routerregister = require('./routers/register')
+//const routerregister = require('./routers/register')
 const productsRouter = require('./routers/productos');
-//declarar los recursos estaticos (img, css, etc)
+
+//declarar los recursos 
 
 app.use(express.static("public"))
+app.use('/usuario', express.static("public"))
+
 app.use(express.urlencoded({ extended: false })); 
 app.use(express.json()); 
+app.use(session({
+    secret: "secretooo",
+    resave: false,
+    saveUninitialized: false
+}))
+
+app.use(userLoggedMiddleware)
+
 //app.use(methodOverride('_method')); 
 
 app.set('view engine', 'ejs')
@@ -30,10 +49,10 @@ app.get('/carrito', routerCarrito)
 
 // registro
 
-app.get('/register', routerLogin)
+//app.get('/usuario', routerLogin)
 // acceder a su cuenta
 
-app.use('/login', routerLogin)
+app.use('/usuario', routerLogin)
  
  // detalle de producto
  app.use('/producto', productsRouter);

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="//code.tidio.co/mloqng3fmqeerxntrqhe9y4kcjalrr5u.js" async></script>
 </head>
 <body>
 
@@ -16,51 +17,129 @@
 <%- include("partials/header.ejs") %>
 
 <!--main del register-->   
-    <main>
-        <div class="container">
-                <form action="" class="formulario" method="post" >
-                    <h2 class="titulo">REGISTRARSE</h2>
-                    <div class="div_padre">
+
+<main>
+
+    <video autoplay muted  id="myVideo">
+        <source src="./img/videoplayback.mp4" type="video/mp4">
+        Tu navegador no soporta el tag de video.
+      </video>    
     
+
+        <div class="container">
+
+
+                <form action="/usuario/register" class="formulario" method="post" enctype="multipart/form-data" >
+                    <h2 class="titulo">REGISTRARSE</h2>
+                        <ul class="errores">
+
+                        </ul>
+                    <div class="div_padre">
+
                         <!--nombre-->
                         <div class="nombre">
-                            <label for="nombre">nombre completo</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Juan">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" 
+                                   name="nombre"
+                                   id="nombre" 
+                                   class="nombre"  
+                                   placeholder="Juan"
+                                   value="<%= locals.oldData ? oldData.nombre : null %>">
+                                   
+                            <% if (locals.errors && errors.nombre) { %>
+                                <div class="mensaje-error">
+                                    <%= errors.nombre.msg %>
+                                </div>
+                            <% } %>
                         </div>
     
                         <!--apellido-->
                         <div class="apellido">
-                            <label for="apellido">apellido</label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Perez">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" 
+                                   name="apellido" 
+                                   id="apellido" 
+                                   placeholder="Perez"
+                                   value="<%= locals.oldData ? oldData.apellido : null %>">
+                            <% if (locals.errors && errors.apellido) { %>
+                                <div class="mensaje-error">
+                                    <%= errors.apellido.msg %>
+                                </div>
+                            <% } %>
                         </div>
                         <!--correo-->
                         <div class="correo">
-                            <label for="correo">correo</label>
-                            <input type="email" name="correo" id="correo" placeholder="juanperez@gmail.com">
+                            <label for="correo">Correo</label>
+                            <input type="email" 
+                                   name="correo" 
+                                   id="correo" 
+                                   placeholder="juanperez@gmail.com"
+                                   value="<%= locals.oldData ? oldData.correo : null %>">
+                            <% if (locals.errors && errors.correo) { %>
+                                <div class="mensaje-error">
+                                    <%= errors.correo.msg %>
+                                </div>
+                            <% } %>
                         </div>
                         <!--contraseña-->
                         <div class="contraseña">
-                            <label for="contraseña">contraseña</label>
-                            <input type="password" name="contraseña" id="contraseña" placeholder="******">
+                            <label for="contraseña">Contraseña</label>
+                            <input type="password" 
+                                   name="contrasena" 
+                                   id="contrasena" 
+                                   placeholder="******"
+                                   value="<%= locals.oldData ? oldData.contrasena : null %>">
+                            <% if (locals.errors && errors.contrasena) { %>
+                                <div class="mensaje-error">
+                                    <%= errors.contrasena.msg %>
+                                </div>
+                            <% } %>
+                        </div>
+                        <div class="cumpleanos">
+                            <label for="clumpeanos">Fecha de nacimiento</label>
+                            <input type="date" 
+                                   name="cumpleanos" 
+                                   id="cumpleanos" 
+                                   placeholder="juanperez@gmail.com"
+                                   value="<%= locals.oldData ? oldData.cumpleanos : null %>">
+                            <% if (locals.errors && errors.cumpleanos) { %>
+                                <div class="mensaje-error">
+                                    <%= errors.cumpleanos.msg %>
+                                </div>
+                            <% } %>
                         </div>
                         <!--Imagen-->
-                        <label for="imagendeusuario" class="form-label">Imagen de perfin:</label>
+                        <label for="imagendeusuario" class="form-label">Imagen de perfil:</label>
                         <input type="file" id="product-image" name="imagen">
+                        <% if (locals.errors && errors.imagen) { %>
+                            <div class="mensaje-error">
+                                <%= errors.imagen.msg %>
+                            </div>
+                        <% } %>
                         <!--Categoria-->
                         <label for="categoria" class="form-label">Genero:</label>
-                        <select name="category" id="category" class="form-input">
+                        <select name="genero" id="category" class="form-input">
                             <option value="">Elegí</option>
-                            <option value="">Masculino</option>
-                            <option value="" >Femenino</option>
+                            <option  
+                                value="Masculino">Masculino</option>
+                            <option value="Femenino" >Femenino</option>
                         </select>
+                        <% if (locals.errors && errors.genero) { %>
+                            <div class="mensaje-error">
+                                <%= errors.genero.msg %>
+                            </div>
+                        <% } %>
+                        <input type="submit" class="boton-enviar" value="Registrarte">
                         <!--en caso de que ya tenga cuenta-->
                         <div class="cuenta">
-                            <p>ya tienes una cuenta? <a href="/login">toca aqui</a></p
+                            <p>ya tienes una cuenta? <a href="/usuario/login">toca aqui</a></p>
                         </div>
                     </div>
                 </form>
             </div>
     </main>
+
+    <script src="/js/register.js"></script>
     
     <footer class="footer-color">
         <ul>
@@ -77,6 +156,7 @@
                 <p class="copy">2023Grupo4/Todos los derechos reservados.</p>
             </div>
     </footer>
+
 
     
 </body>

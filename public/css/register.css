@@ -13,8 +13,12 @@
  
 }
 
-#logo{
+.logo{
     width: 30vw;
+}
+
+#logo1{
+    width: 40%;
 }
 
 #carrito{
@@ -22,6 +26,26 @@
     margin: 0 10px 0 0;
     
 }
+
+.nameuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkperfil{
+    margin: 0%;
+    width: 13vw;
+    height: 4vw;
+}
+
+.fotoperfil{
+    width: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 /**/
 #carrito:hover {
     transform: scale(1.15);
@@ -89,6 +113,18 @@ li a:hover{
     background-color: #a377fc;
 }
 
+.sesion {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: pink;
+    width: 70px;
+    font-size: 9px;
+}
+
+.sesion1{
+    display: none;
+}
 /*hasta aqui termina*/
 
 .micarrito{
@@ -122,6 +158,18 @@ ul li{
 }
 
 /*main*/
+#myVideo {
+    
+    
+    max-width: 100%;
+    animation: moverContenedor2 5s linear infinite;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+
+}
+
 main {
     background-image: linear-gradient(45deg, rgb(233, 114, 114), rgb(120, 169, 231));
     display: flex;
@@ -131,18 +179,18 @@ main {
 }
 
 .container {
-    width: 450px;
+    width: 300px;
     padding: 20px;
-    background-color: rgba(191, 196, 224, 0.7);
-    height: 75vh;
+    background-color: rgba(239, 226, 245, 0.747);
+    height: 70vh;
     margin: auto;
     display: flex;
     margin-top: 10%;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    z-index: 2;
 }
-
 .titulo {
     text-align: center;
     margin-top: 30px;
@@ -161,10 +209,19 @@ main {
     flex-direction: column;
 }
     
+.mensaje-error{
+    color: red;
+}
 
 input {
     border-radius: 10px;
     padding: 10px;
+    border: 1px solid;
+    
+}
+
+.boton-enviar{
+    background-color: mediumorchid;
 }
 /*este es el texto */
 .cuenta {
@@ -265,7 +322,7 @@ footer .copy{
         display: flex;
     }
     .container {
-        width: 45%;
+        width: 400px;
         height: auto;
         margin-top: 5%;
     }
@@ -287,6 +344,20 @@ footer .copy{
     .boton {
         font-size: 14px;
         padding: 8px 16px;
+    }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 11px;
+        width: 89px;
+        margin: 8px;
+    }
+    
+    .sesion1{
+        display: none;
     }
 }
 
@@ -313,4 +384,38 @@ footer .copy{
     .boton{
         margin-left: 10px;
     }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 13vw;
+    }
+    
+    .sesion1{
+        display: flex;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 10vw;
+    }
 }
+
+@media (min-width:1000px){
+
+    .sesion{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sesion1{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+    }

@@ -15,9 +15,33 @@
     background-color: #bfc4e0;
 }
 
-#logo{
+.logo{
     width: 30vw;
 }
+
+#logo1{
+    width: 40%;
+}
+
+.nameuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkperfil{
+    margin: 0%;
+    width: 13vw;
+    height: 4vw;
+}
+
+.fotoperfil{
+    width: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 
 #carrito{
     width: 6vw;
@@ -125,6 +149,18 @@ ul li{
     margin: 0 10px 0 0;
 }
 
+.sesion {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: pink;
+    width: 70px;
+    font-size: 9px;
+}
+
+.sesion1{
+    display: none;
+}
 
 /*css del detalle del producto */
 .conteiner{
@@ -133,27 +169,42 @@ ul li{
     flex-wrap: wrap;
     align-items: center;
     min-width: 360px;
-    background-color: #a377fc;
+
 }
 
 .producto {
-    font-size: 12px;
+    font-size: 150%;
 }
 .precio{
     font-size: 12px;
+}
+
+.colorPrecio{
+    color: rgb(130, 180, 56);
 }
 .div-P{
     font-size: 14px;
 }
 
-.conteiner img{
-    width: 250px;
-    margin: 50px;   
-    padding: 15px;
-    background-color: #bfc4e0;
-    border: 1px solid black;
-    border-radius: 15px;
+main{
+    margin-bottom: 10px;
+
 }
+
+.image-conteiner{
+    width: 21rem;
+    height: 20rem;
+    margin: 20px;
+}
+
+.conteiner img{
+
+    width: 100%;
+ 
+    
+    height: 100%;
+}
+
 
 .descripcion{
     float: right;
@@ -162,7 +213,7 @@ ul li{
     flex: 1;
     height: 200px;
     display: flex;
-    background-color: #bfc4e0;
+ 
     display: inline-block;   
     margin:auto;
 
@@ -175,7 +226,7 @@ ul li{
     font-family: sans-serif;
     border: solid 1px black ;
     border-radius: 5px;
-    background: white;
+    background: green;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
@@ -294,6 +345,20 @@ footer .copy{
     .barra-navegacion li{
         font-size: 13px;
     }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 11px;
+        width: 89px;
+        margin: 8px;
+    }
+    
+    .sesion1{
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
@@ -302,6 +367,25 @@ footer .copy{
         width: 350px;
         height: 60vh;
     }
+
+    .image-conteiner {
+        width: 33rem;
+        height: 30rem;
+        margin: 20px;
+        border-right: 1px solid black;
+    }
+
+    .Precio{
+        font-size: 20px;
+        margin: 15px 0 15px 0;
+        border-bottom: 1px solid;
+        padding: 0px 0 15px;
+    }
+
+    .colorPrecio{
+        font-size: 5vh;
+    }
+    
     #logo{
         width: 15%;
         margin: 0 0 0 40px;
@@ -317,4 +401,75 @@ footer .copy{
     .fa-circle-user{
         font-size: 3vw;
     }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 10vw;
+    }
+    
+    .sesion1{
+        display: flex;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 10vw;
+    }
+
+    .descripcion {
+        flex: 1;
+        height: 38vh;
+        display: flex;
+  
+        display: inline-block;
+        margin: auto;
+    }
+
+    .nombreProducto{
+        border-bottom: 1px solid;
+    }
+    .conteiner{
+        width: 92vw;
+        margin: auto;
+    }
+    
 }
+
+@media (min-width:1000px){
+
+    .sesion{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sesion1{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-conteiner {
+        width: 33rem;
+    height: 33rem;
+    margin: 20px;
+}
+    }
+
+    .comentarios-seccion {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .comentario {
+        margin-bottom: 10px;
+    }
+    
+

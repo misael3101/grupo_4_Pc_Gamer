@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="/css/perfil.css">
+    <script src="https://kit.fontawesome.com/e666ffac4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="//code.tidio.co/mloqng3fmqeerxntrqhe9y4kcjalrr5u.js" async></script>
+</head>
+
+<!--Header-->
+<%- include("partials/header.ejs") %>
+
+<body>
+
+
+    <!-- Contenido del perfil -->
+    <div class="perfil-container">
+      <div class="perfil-avatar">
+        <!-- Tu imagen de perfil aquí -->
+        <img src="/img/avatar/<%= usuario.imagen %>" alt="Mi Avatar">
+      </div>
+      <div class="perfil-info">
+        <h1><%= usuario.nombre %> <%= usuario.apellido %></h1>
+        <p><%= usuario.correo %></p>
+        <p>Correo electrónico: usuario@example.com</p>
+        <p>Correo electrónico: usuario@example.com</p>
+        <a href="/usuario/logout">
+          <button>Cerrar Sesión</button>
+        </a>
+        <!-- Otras informaciones del perfil -->
+      </div>
+    </div>
+  
+
+  </body>
+<!--footer-->
+<%- include("partials/footer.ejs") %>

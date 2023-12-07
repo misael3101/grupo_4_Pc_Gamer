@@ -19,9 +19,33 @@ body {
     background-color: #bfc4e0;
 }
 
-#logo{
+.logo{
     width: 30vw;
 }
+
+#logo1{
+    width: 40%;
+}
+
+.nameuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkperfil{
+    margin: 0%;
+    width: 13vw;
+    height: 4vw;
+}
+
+.fotoperfil{
+    width: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 
 #carrito{
     width: 6vw;
@@ -70,6 +94,19 @@ body {
 .burger-menu{
     font-size: 15px;
     margin:auto;
+}
+
+.sesion {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: pink;
+    width: 70px;
+    font-size: 9px;
+}
+
+.sesion1{
+    display: none;
 }
 
 /* agregando barra de navegacion*/
@@ -131,9 +168,20 @@ ul li{
 /*Añadiendo el css del formulario de edicion*/
 
 
+main{
+    margin-bottom: 13vh;
+    margin-top: 13vh;
+}
+
+.mensaje-error{
+    color: red;
+    font-size: 1.2vw;
+}
+
 .products-wrapper {
     margin-top: 30px;
     margin-bottom: 30px;
+    background-image: linear-gradient(45deg, rgb(233, 114, 114), rgb(120, 169, 231));
   }
   
   .products-title {
@@ -144,13 +192,14 @@ ul li{
 
   .conteriner-form {
     background-color: rgba(191, 196, 224, 0.7);
-    border-radius: 8px;
+    border-radius: 30px;
     font-size: 10px;
     overflow: hidden;
     margin: auto;
     justify-items: center;
-    width: 90vw;
+    width: 95vw;
     height: 100%;
+    padding: 25px;
   }  
 
   .product-detail {
@@ -305,6 +354,24 @@ footer .copy{
     .barra-navegacion li{
         font-size: 13px;
     }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 11px;
+        width: 89px;
+        margin: 8px;
+    }
+    
+    .sesion1{
+        display: none;
+    }
+
+    .conteriner-form{
+        width: 90%;
+    }
 }
 
 @media (min-width: 769px) {
@@ -343,7 +410,43 @@ footer .copy{
 
     }
 
+
     .desc-img input{
         width: 50%;
     }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 10vw;
+    }
+    
+    .sesion1{
+        display: flex;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 10vw;
+    }
 }
+
+
+@media (min-width:1000px){
+
+    .sesion{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sesion1{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+    }

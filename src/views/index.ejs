@@ -9,17 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="//code.tidio.co/mloqng3fmqeerxntrqhe9y4kcjalrr5u.js" async></script>
 </head>
 <body>
 <%- include("partials/header.ejs") %>
     <main>
+        
+
 <!--slider-->
-        <div class="slider-frame">
-            <ul>
-                <li><img src="/img/slider1.png" alt=""></li>
-                <li><img src="/img/slider2.png" alt=""></li>
-                <li><img src="/img/slider3.png" alt=""></li>
-            </ul>
+        <div class="conteiner-slider">
+            <div class="slider1" id="slider1">
+                <div class="slider__seccion">
+                    <img src="/img/slider/tu-pc-lista.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__seccion">
+                    <img src="/img/slider/envios-a-todo-el-pais.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__seccion">
+                    <img src="/img/slider/cyber-monday-copia.jpg" alt="" class="slider__img">
+                </div>
+                <div class="slider__seccion">
+                    <img src="/img/slider/supera-tus-limites-negro.jpg" alt="" class="slider__img">
+                </div>
+            </div>
+            <div class="slider__btn slider__btn--right" id="btn-right">►</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">◄</div>
+
         </div>
 <!--Barra de productos-->
         <h2>Ultimas novedades</h2>
@@ -43,10 +58,33 @@
         </section>
      
   
-    
+        <div class="caja-padre">
+        <div class="caja">
+            <a href="#"> <img class="img1" src="/img/card.png" alt="tarjeta"> </a>
+        </div>
+        <div class="info-text">
+            <span style="font-family: Montserrat Medium;">PAGA EN HASTA 12 CUOTAS</span>
+            <br>
+            con las principales tarjetas"
+            <br>
+            de credito
+        </div>
+        <div class="caja">
+            <a href=""> <img class="img1" src="/img/camion.png" alt="camion"> </a>
+        </div>
+        <div class="info-text">
+            <span style="font-family: Montserrat Medium;">RRECIBI TUS PEDIDOS</span>
+            <br>
+            en mas de 100
+            <br>
+            puntos
+            <br>
+            de todo el pais
+        </div>
+    </div>
     <!--hasta aqui llega-->
     </main>
-
+<script src="/js/slider.js"></script>
 <!--slider2-->
 <div class="slider">
     <div class="slide-track">
@@ -97,30 +135,7 @@
 </div>
 
     <!--(                    )-->
-    <div class="caja-padre">
-        <div class="caja">
-            <a href="#"> <img class="img1" src="/img/card.png" alt="tarjeta"> </a>
-        </div>
-        <div class="info-text">
-            <span style="font-family: Montserrat Medium;">PAGA EN HASTA 12 CUOTAS</span>
-            <br>
-            con las principales tarjetas"
-            <br>
-            de credito
-        </div>
-        <div class="caja">
-            <a href=""> <img class="img1" src="/img/camion.png" alt="camion"> </a>
-        </div>
-        <div class="info-text">
-            <span style="font-family: Montserrat Medium;">RRECIBI TUS PEDIDOS</span>
-            <br>
-            en mas de 100
-            <br>
-            puntos
-            <br>
-            de todo el pais
-        </div>
-    </div>
+
 <!--footer-->
 <%- include("partials/footer.ejs") %>
 </body>

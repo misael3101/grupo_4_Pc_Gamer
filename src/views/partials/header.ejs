@@ -2,8 +2,9 @@
 <header>
     <!--header principal: logo, user, carito-->
     <div class="header-container">
-        <img id="logo" src="/img/logo.png" alt="logo">
-        
+        <a href="/" class="logo">
+            <img  src="/img/logo.png" id="logo1" alt="logo">
+          </a>
         <form class="search-flex"  action="/buscar" method="POST">
         
             <input class="search" type="text" name="buscar" placeholder="Buscar...">
@@ -11,12 +12,24 @@
         </form>
 
         <ul class="nav-principal">
+            
+            <% if (locals.isLogged) { %>
+             
+            
             <li>
-                <a href="http://localhost:3555/carrito"><img id="carrito" src="/img/carrito.png"><span class="micarrito">Mi carrito</span></a>
+                <a class="linkperfil" href="http://localhost:3555/usuario/perfil"><img src="/img/avatar/<%= locals.userLogged.imagen %>" class="fotoperfil"></i><p class="nameuser"><%= locals.userLogged.nombre %> <%= locals.userLogged.apellido %></p></a>
             </li>
-            <li>
-                <a href="http://localhost:3555/register"><i class="fa-regular fa-circle-user"></i><p class="ingresar">Ingresar</p></a>
+            
+            <% } else { %>
+
+            <li class="sesion">
+                <a href="http://localhost:3555/usuario/login">Iniciar sesion</a>
             </li>
+
+            <li class="sesion1">
+                <a href="http://localhost:3555/usuario/register">Registrarse</a>
+            </li>
+           <% } %>
         </ul>
     </div>
 <!--barra de navegacion-->
@@ -25,8 +38,13 @@
             <li><a href="@">Productos</a></li>
             <li><a href="@">Beneficios</a></li>
             <li><a href="@">Seguimiento</a></li>
+            
+            <% if (locals.isLogged) { %>
             <li><a href="/producto/create-product">Crear Producto</a></li>
+            <% } %>
 			<li><a href="/ayuda">Ayuda</a></li>
+
+
         </ul>
         <a href="#" class="burger-menu">
             <i class="fas fa-bars"></i>

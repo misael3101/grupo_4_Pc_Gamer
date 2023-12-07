@@ -14,9 +14,33 @@ body {
     background-color: #bfc4e0;
 }
 
-#logo{
+.logo{
     width: 30vw;
 }
+
+#logo1{
+    width: 40%;
+}
+
+.nameuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkperfil{
+    margin: 0%;
+    width: 13vw;
+    height: 4vw;
+}
+
+.fotoperfil{
+    width: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 
 #carrito{
     width: 6vw;
@@ -92,6 +116,18 @@ li a:hover{
     background-color: #a377fc;
 }
 
+.sesion {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: pink;
+    width: 70px;
+    font-size: 9px;
+}
+
+.sesion1{
+    display: none;
+}
 /*hasta aqui termina*/
 
 .micarrito{
@@ -125,30 +161,45 @@ ul li{
 }
 
 /*main*/
+
+#myVideo {
+    
+    
+    max-width: 100%;
+    animation: moverContenedor2 5s linear infinite;
+    height: 103%;
+    object-fit: cover;
+    position: absolute;
+
+
+}
+
 main{
+
+    background-image: linear-gradient(45deg, rgb(233, 114, 114), rgb(120, 169, 231));
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 103vh;
+    margin: 0 0 -19px;
 }
 
 .container {
     width: 450px;
     padding: 20px;
-    background-color: rgba(191, 196, 224, 0.7);
-    height: 60vh;
+    background-color: rgba(239, 226, 245, 0.747);
+    height: 28vh;
     margin: auto;
     display: flex;
     margin-top: 12%;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    z-index: 2;
 }
 
 .titulo {
     text-align: center;
-    border: solid black 1px;
-    padding: 15px;
     color: bisque;
 }
 .div_padre {
@@ -166,13 +217,20 @@ main{
 .nombre, .correo, .contraseña {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 60vw;
 }
-    
+
+.mensaje-error{
+    color: red;
+}
 
 input {
     border-radius: 10px;
     padding: 10px;
+    border: 1px solid;
 }
+
 /*este es el texto */
 .cuenta {
     display: flex;
@@ -181,16 +239,10 @@ input {
 }
 /*este es el boton */
 .boton1{
-    background: black;
-    border: none;
-    color: white;
-    margin-top:10px
-}
-.boton2 {
-    background: black;
-    border: none;
-    color: white;
-    margin-left: 10px;
+    background-color: mediumorchid;
+    border: 1px solid;
+    margin-top:10px;
+    width: 100%;
 }
 
 /*footer*/
@@ -233,9 +285,20 @@ footer .copy{
 
 @media (min-width: 361px) {
     /*header principal*/
-.container{
-    width: 300px;
-}
+
+    .container {
+        width: 75%;
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .nombre, .correo, .contraseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 60vw;
+    }
+
     .flex-container{
         display: flex;
         justify-content: space-around;
@@ -248,11 +311,6 @@ footer .copy{
 
     .barra-navegacion ul{
         display: flex;
-    }
-    .container {
-        width: 90%;
-        height: auto;
-        margin-top: 5%;
     }
 
     .titulo {
@@ -268,14 +326,41 @@ footer .copy{
         font-size: 14px;
         padding: 8px;
     }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 11px;
+        width: 89px;
+        margin: 8px;
+    }
+    
+    .sesion1{
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
 
     .container{
-        width: 35%;
-        height: 37vh;
+        width: 400px;
+        height: 30vh;
     }
+
+    .nombre, .correo, .contraseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+
     #logo{
         width: 15%;
         margin: 0 0 0 40px;
@@ -295,4 +380,38 @@ footer .copy{
     .boton{
         margin-left: 10px;
     }
+
+    .sesion {
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 13vw;
+    }
+    
+    .sesion1{
+        display: flex;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: pink;
+        font-size: 15px;
+        width: 10vw;
+    }
 }
+
+@media (min-width:1000px){
+
+    .sesion{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sesion1{
+        width: 112px;
+        display: flex;
+        justify-content: center;
+    }
+    }
